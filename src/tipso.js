@@ -203,7 +203,8 @@
         }
         tipso_bubble.find('.tipso_title').css({
             background: obj.settings.titleBackground,
-            color: obj.settings.titleColor
+            color: obj.settings.titleColor,
+            display: typeof obj.titleContent() === "undefined" ? 'none' : 'block'
         });
         tipso_bubble.find('.tipso_content').html(obj.content());
         tipso_bubble.find('.tipso_title').html(obj.titleContent());
